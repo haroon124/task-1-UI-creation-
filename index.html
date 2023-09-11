@@ -4,40 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guarder</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+
+
+    <!-- my own link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+
+    <!-- top-bar-main -->
+    <div class="top-bar-main">
         <div class="top-bar">
 
             <!-- location -->
-        <div id="loaction-img" style="display: flex;" >
-            <img src="./images/top bar/location.png" alt="location" width="10px" height="15px" style="margin-top: 2px; margin-right: 2px;">
-            <p id="location-text">
-                Lorem ipsum dolor sit amet,</p>
+        <div  style="display: flex;" >
+            <img id="loaction-img" src="./images/top bar/location.png" alt="location">
+            <p class="top-bar-text">
+                lorem  ipsum dolor sit amet,</p>
         </div>
 
             <!-- call -->
-        <div id="call-img" style="display: flex;" >
-            <img src="./images/top bar/call.png" alt="call" width="16px" height="17px" style="margin-right: 2px;">
-            <p id="location-text">
+        <div  style="display: flex;" >
+            <img id="call-img" src="./images/top bar/call.png" alt="call" >
+            <p class="top-bar-text">
                 Call : +01 1234567890</p>
         </div>
+
             <!-- email -->
-        <div id="email-img" style="display: flex;" >
-            <img src="./images/top bar/email.png" alt="email" width="16px" height="13px" style="margin-top: 3px; margin-right: 2px;">
-            <p id="location-text">
+        <div  style="display: flex;" >
+            <img id="email-img" src="./images/top bar/email.png" alt="email" >
+            <p class="top-bar-text">
                 demo@gmail.com</p>
         </div>
 
         
-    </div></div>
+    </div>
+</div>
+
+<!-- nav bar -->
     
 
 
 
 
 
+<!-- about -->
+<div class="about">
+<div id="about-img">
+    <img src="./images/about-img.jpg" alt="">
+</div>
+
+<div class="card" style="width: 45%; 
+height: 45%;
+background-color: white;
+border-color:white;
+box-shadow: 0px 0px 9px 1px rgba(61,60,60,0.75);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(61,60,60,0.75);
+-moz-box-shadow: 0px 0px 9px 1px rgba(61,60,60,0.75);
+position: absolute;
+margin-left: 38%;
+margin-top: 3.5%; ">
+    <div class="card-body">
+      <h1 class="card-title">WHO ARE WE?</h1>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+          in reprehenderit in voluptate velit.
+
+      </p>
+      <button type="button" class="btn btn-warning" style="width: 29%;
+      border-radius: 0px;
+      background-color: #f1db25;
+      border-color: white;
+      color: white;">LEARN MORE</button>
+    </div>
+  </div>
+
+</div>
 
 
 
@@ -46,5 +93,12 @@
 
 
 
+
+
+
+
+<!-- js bootstrap links -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>
