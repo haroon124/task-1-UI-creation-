@@ -206,6 +206,19 @@
 /* responsive */
 
 @media (min-width:1024px) and (max-width:1440px) {
+
+    /* top bar */
+    .top-bar-main {
+       height: 45px;
+    }
+    .top-bar-text {
+        font-size: medium;  
+    }
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    /* top bar */
+
     
 }
 
