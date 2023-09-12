@@ -53,11 +53,16 @@
 
 <!-- about -->
 <div class="about">
-<div id="about-img">
-    <img src="./images/about-img.jpg" alt="">
+
+    <!-- about image -->
+<div class="about-img-container">
+    <div id="about-img">
+        <img src="./images/about-img.jpg" class="img-fluid" alt="about image">
+    </div>
 </div>
 
-<div class="card" style="width: 45%; 
+<!-- about card -->
+<div class="card" style="width:30rem; 
 height: 45%;
 background-color: white;
 border-color:white;
@@ -66,21 +71,30 @@ box-shadow: 0px 0px 9px 1px rgba(61,60,60,0.75);
 -moz-box-shadow: 0px 0px 9px 1px rgba(61,60,60,0.75);
 position: absolute;
 margin-left: 38%;
-margin-top: 3.5%; ">
+margin-top: 3.5%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <div class="card-body">
-      <h1 class="card-title">WHO ARE WE?</h1>
+      <h1 class="card-title" style="font-weight: 550;
+                                    font-size: xx-large;">WHO ARE WE?</h1>
+
+
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
           ut aliquip ex ea commodo consequat. Duis aute irure dolor 
           in reprehenderit in voluptate velit.
-
       </p>
+
+      <!-- button -->
       <button type="button" class="btn btn-warning" style="width: 29%;
       border-radius: 0px;
       background-color: #f1db25;
       border-color: white;
-      color: white;">LEARN MORE</button>
+      color: white;
+      font-size: small;
+      height: 15%;
+      width: 28%;">READ MORE</button>
+
     </div>
   </div>
 

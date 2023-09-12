@@ -64,13 +64,19 @@
 
 
 /* about  */
+.about-img-container {
+    width: 50%;
+}
 .about {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     margin-top: 4%;
 }
 #about-img {
-    width: 50%;
+    width: 100%;
+    height: 58%;
 }
 #about-img img {
     width: 95%;
@@ -147,6 +153,27 @@
 
 
 /* responsive */
+
+@media (max-width:1150px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:576px) {
