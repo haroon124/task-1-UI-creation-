@@ -212,12 +212,23 @@
        height: 45px;
     }
     .top-bar-text {
-        font-size: medium;  
+        font-size: medium; 
+        margin-top: 15px; 
     }
+    #location-img {
+        margin-top: 18px;
+    }
+    #call-img {
+        margin-top: 19px;
+    }
+    #email-img {
+        margin-top: 19px;
+    }
+
+    /* top bar */
     .home-content h1 {
         font-size: 3rem;
     }
-    /* top bar */
 
     
 }
