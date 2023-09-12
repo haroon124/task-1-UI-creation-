@@ -52,53 +52,104 @@
     margin-top: 13px;
 }
 
+/* top bar end */
+
 
 /* nav bar */
 
+/* nav bar end*/
 
+/* home */
 
-
-
-
-
-
-
-/* about  */
-.about-img-container {
-    width: 50%;
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
-.about {
+
+.home-btn1 {
+    background-color: white;
+    border-color: white;
+    color: black;
+    width: 9rem;
+    border-radius: 0;
+    margin-right: 1%;
+}
+
+.home-btn1:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+
+
+}
+
+.home-btn2 {
+    color: black;
+    width: 9rem;
+    border-radius: 0;
+    color: white;
+}
+
+.home-btn2:hover {
+    color: black;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: rgb(255, 213, 0);
+    color: rgb(255, 221, 53) ;
+}
+
+
+/* about */
+
+.about-container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 4%;
+    align-items: center;
 }
+
+.about {
+    border: 2px solid red;
+    width: 90%;
+    height: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
 #about-img {
     width: 100%;
-    height: 58%;
-}
-#about-img img {
-    width: 95%;
-    height:  98%;
-    position: relative;
-    margin-left: -40%;
-
+    height: 100%;
 }
 
-/* card */
-.card-body {
-    width: fit-content;
-    height: fit-content;
-
+.about-card {
+    border: 2px solid white;
+    max-width: 30rem;
+    height: 40%;
+    position: absolute;
+    margin-left: 35%;
+    box-shadow: 1px 2px 16px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 1px 2px 16px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 1px 2px 16px 0px rgba(0,0,0,0.32);
 }
 
 
-.btn:hover {
-    background-color: white !important;
-    border-color: #f1db25 !important;
-    color: #f1db25 !important;
-}
+
+
+
+
+
+
+
 
 
 
@@ -154,8 +205,133 @@
 
 /* responsive */
 
-@media (max-width:1150px) {
+@media (min-width:1024px) and (max-width:1440px) {
     
+}
+
+
+
+
+
+
+@media (min-width:977px) and (max-width:1023px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:976px) {
+   
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:576px) and (max-width:767px) {
+   
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:426px) and (max-width:575px) {
+        /* top-bar */
+        .top-bar-text {
+            display: none;
+        }
+        
+        /* location-img */
+        #loaction-img {
+            margin-top: 0px;
+            width: 18px;
+            height: 22px;
+        }
+    
+        /* call-img */
+        #call-img {
+            margin-top: 0px;
+            width: 18px;
+            height: 18px;
+        }
+    
+        /* email-img */
+        #email-img {
+            margin-top: 0px;
+            width: 20px;
+            height: 17px;
+        }
+        /* top bar end */
+}
+
+
+
+
+
+
+
+
+@media (max-width:425px) {
+        /* top-bar */
+        .top-bar-text {
+            display: none;
+        }
+        
+        /* location-img */
+        #loaction-img {
+            margin-top: 0px;
+            width: 18px;
+            height: 22px;
+        }
+    
+        /* call-img */
+        #call-img {
+            margin-top: 0px;
+            width: 18px;
+            height: 18px;
+        }
+    
+        /* email-img */
+        #email-img {
+            margin-top: 0px;
+            width: 20px;
+            height: 17px;
+        }
+        /* top bar end */
+
+        /* home  */
+        .home-btn1 {
+            display:block;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-btn2 {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .home-content h1 {
+            font-size: xx-large !important;
+
+        }
 }
 
 
@@ -170,38 +346,3 @@
 
 
 
-
-
-
-
-
-
-@media (max-width:576px) {
-
-    /* top-bar-main */
-    .top-bar-text {
-        display: none;
-    }
-    
-    /* location-img */
-    #loaction-img {
-        margin-top: 0px;
-        width: 18px;
-        height: 22px;
-    }
-
-    /* call-img */
-    #call-img {
-        margin-top: 0px;
-        width: 18px;
-        height: 18px;
-    }
-
-    /* email-img */
-    #email-img {
-        margin-top: 0px;
-        width: 20px;
-        height: 17px;
-    }
-    
-}
