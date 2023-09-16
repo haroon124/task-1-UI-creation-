@@ -62,7 +62,7 @@
 
 
 
-/*/////////////////////    home    ////////////////*/
+/*/////////////////////    home    //////////////// */
 
 .home {
     width: 100%;
@@ -107,6 +107,8 @@
     color: rgb(255, 221, 53) ;
 }
 
+/*/////////////////////    home end    //////////////// */
+
 
 /* ///////////////   about    ////////////////// */
 
@@ -133,6 +135,7 @@
 #about-img {
     width: 100%;
     height: 100%;
+    border-radius: 5px 5px 1px 1px;
 }
 
 .about-card {
@@ -149,30 +152,43 @@
 
 .img-div {
     border: 0px !important;
+    border-radius: 5px 5px 1px 1px;
+
 }
 
 /* /////////////////  about end  ///////////// */
 
+
 /* ////////////////  our services  ////////////////// */
+.our-services-container {
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(34, 34, 34) ;
+}
+
+#our-services-h1 {
+    /* border: 2px solid red; */
+    color: white;
+    font-weight: bold;
+    font-size: xx-large !important;
+    text-align: center;
+    margin-top: 3%;
+}
 .our-services {
-    background-color: black;
-    padding-top: 90px;
+    /* border: 2px solid red; */
+    padding-top: 30px;
     padding-bottom: 90px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.services-card-for-padding {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
+
 
 .services-card-img {
+    /* border:  2px solid red; */
     width: 80px;
-    margin-left: 35%;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-top: 10px;
 
 
@@ -188,7 +204,12 @@
 .services-card-btn {
     width: 9rem !important;
     height:  2.5rem !important;
-    transform: translate(30%);
+}
+.my-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 /* ////////////// our services end  ////////////////// */
 
@@ -251,10 +272,13 @@
 
 
 
-/* responsive */
+/*/////////////////////    responsive     /////////////////////*/
+
 
 @media (min-width:1441px) {
-    
+
+    /* /////////////////   custom styling    ///////////// */
+
     h1 {
         font-size: 3.5rem !important;
     }
@@ -262,7 +286,10 @@
         font-size: large !important;
     }
 
-    /* top bar */
+    /* /////////////////   custom styling end   ///////////// */
+
+
+    /*///////////////////    top bar     //////////////////*/
     #email-img {
         width: 19px !important;
         height:  17px !important;
@@ -276,7 +303,10 @@
         height:  19px !important;
     }
 
-    /* home */
+    /*///////////////////  top bar end   //////////////////*/
+
+
+    /*///////////////////     home      //////////////////*/
 
     .home-btn1 {
         height: 2.5rem;
@@ -287,6 +317,11 @@
         width: 10rem;
     }
 
+    /*///////////////////   home end   //////////////////*/
+
+
+    /*///////////////////  about  //////////////////*/
+    
     .about-card {
         width: 1000px !important;
     }
@@ -296,6 +331,9 @@
     .about-card h1 {
         font-size: 70px !important;
     }
+
+    /*///////////////////   about end   //////////////////*/
+
 }
 
 
@@ -312,7 +350,8 @@
 
 @media (min-width:1024px) and (max-width:1440px) {
 
-    /* top bar */
+    /*//////////////////   top bar    ////////////////////*/
+
     .top-bar-main {
        height: 45px;
        display: flex;
@@ -333,7 +372,11 @@
         height: 15px;
     }
 
-    /* home */
+    /*//////////////////   top bar end    ////////////////////*/
+
+
+    /*//////////////////   home   ////////////////////*/
+
     .home-content h1 {
         font-size: 3.2rem !important;
     }
@@ -348,11 +391,14 @@
 
     }
 
+    /*//////////////////    home end    ////////////////////*/
 
-    /*      about       */
+
+
+    /*//////////////////    about    ////////////////////*/
 
     .about-card { 
-        width: 35rem !important;
+        width: 500rem !important;
         height: 16rem !important;
     }
     .about-card-btn {
@@ -363,6 +409,19 @@
         height: 58% !important;
         width: 58% !important;
     }
+
+    /*//////////////////    about end    ////////////////////*/
+
+    /*//////////////////    our services    ////////////////////*/
+    .services-card {
+        width:20rem  !important;
+        height:20rem !important;
+    }
+    .services-card-btn {
+        width: 10rem !important;
+        height: 2.5rem !important;
+    }
+    /*//////////////////    our services end    ////////////////////*/
     
 }
 
@@ -372,7 +431,10 @@
 
 
 @media (min-width:977px) and (max-width:1023px) {
-    /* .about */
+
+
+    /*///////////////   about   /////////////////*/
+
     .about {
         display: flex;
         justify-content: center;
@@ -400,6 +462,24 @@
         height: 3rem !important;
         width: 11rem !important;
     }
+
+    /*///////////////  about end  /////////////////*/
+
+    /*//////////////////    our services    ////////////////////*/
+    .our-services-container {
+        margin-top: 22%;
+        height: 30rem !important;
+    }
+    .services-card {
+        width:18rem  !important;
+        height:21rem !important;
+    }
+    .services-card-btn {
+        width: 9rem !important;
+        height: 2.5rem !important;
+    }
+    /*//////////////////    our services end    ////////////////////*/
+
     
 }
 
@@ -415,7 +495,7 @@
 @media (min-width:768px) and (max-width:976px) {
 
 
-    /* .about */
+    /* ///////////////////  about    ///////////////*/
     .about {
         display: flex;
         justify-content: center;
@@ -445,6 +525,25 @@
         height: 3rem !important;
         width: 11rem !important;
     }
+
+    /* ///////////////////   about end    ///////////////*/
+
+        /*//////////////////    our services    ////////////////////*/
+        .our-services-container {
+            margin-top: 22%;
+            height: 33rem !important;
+        }
+        .services-card {
+            width:15rem  !important;
+            height:23rem !important;
+        }
+        .services-card-btn {
+            width: 9rem !important;
+            height: 2.5rem !important;
+        }
+
+        /*//////////////////    our services end    ////////////////////*/
+
     
 }
    
@@ -457,9 +556,9 @@
 
 
 
-@media (min-width:576px) and (max-width:767px) {
+@media (min-width:576px) and (max-width:768px) {
 
-      /* .about */
+      /*//////////////////   about   //////////////////*/
       .about {
         display: flex;
         justify-content: center;
@@ -489,6 +588,36 @@
         height: 3rem !important;
         width: 11rem !important;
     }
+
+    /*//////////////////   about end   //////////////////*/
+
+    /*//////////////////    our services    ////////////////////*/
+
+    .our-services-container {
+        margin-top: 35%;
+        height: 70rem !important;
+    }
+    .our-services {
+        /* border: 2px solid red; */
+        padding: 0px;
+        height: 90%;
+        display: inline-block !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: space-between !important;
+
+    }
+    .services-card {
+        width:25rem  !important;
+        height:19rem !important;
+    }
+    .services-card-btn {
+        width: 9rem !important;
+        height: 2.5rem !important;
+    }
+    
+    /*//////////////////    our services end    ////////////////////*/
+
  
    
 }
@@ -501,8 +630,10 @@
 
 
 
-@media (min-width:425px) and (max-width:575px) {
-        /* top-bar */
+@media (min-width:425px) and (max-width:576px) {
+
+        /*//////////////////   top-bar    ///////////////////*/
+
         .top-bar-text {
             display: none;
         }
@@ -527,12 +658,14 @@
             width: 20px;
             height: 17px;
         }
-        /* top bar end */
+        /*//////////////////   top-bar end    ///////////////////*/
 
 
 
 
-        /* .about */
+
+        /*//////////////////   about    ///////////////////*/
+
         .about {
             display: flex;
             justify-content: center;
@@ -561,6 +694,101 @@
             height: 3rem !important;
             width: 11rem !important;
         }
+
+        /*//////////////////   about end    ///////////////////*/
+
+
+        /*//////////////////    our services    ////////////////////*/
+    
+    .our-services-container {
+                margin-top: 35%;
+                height: 70rem !important;
+    }
+    .our-services {
+                /* border: 2px solid red; */
+                padding: 0px;
+                height: 90%;
+                display: inline-block !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: space-between !important;
+
+    }
+    .services-card {
+        width:25rem  !important;
+        height:19rem !important;
+    }
+
+            .services-card-btn {
+                width: 9rem !important;
+                height: 2.5rem !important;
+    }
+    
+        /*//////////////////    our services end    ////////////////////*/
+
+}
+
+
+@media (max-width:425px) {
+
+
+
+    /*////////////////////    about    ///////////////////////*/
+    .about-container {
+        margin-top: -30% !important;
+    }
+
+    .about-card p {
+        font-size: small !important;
+    }
+    .about {
+        margin-top: 0 !important;
+    }
+    .about-btn {
+        width: 500rem !important;
+    }
+
+
+    /*////////////////////    about end    ///////////////////////*/
+
+
+    /*////////////////////    our services    ///////////////////////*/
+
+    
+    .our-services-container {
+        margin-top: 35%;
+        height: 75rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .our-services-h1 {
+        margin-bottom: -50px !important;
+    }
+
+    .our-services {
+        /* border: 2px solid red; */
+        padding: 0px;
+        height: 90%;
+        display: inline-block !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: space-between !important;
+
+    }
+    .services-card {
+        width:16rem  !important;
+        height:22rem !important;
+    }
+            .services-card-btn {
+                width: 9rem !important;
+                height: 2.5rem !important;
+    }
+    
+        /*//////////////////    our services end    ////////////////////*/
+
+    
+
 }
 
 
@@ -569,9 +797,13 @@
 
 
 
+/*////////////////////    extra responsive    ////////////////*/
+
 
 @media (max-width:600px) {
-        /* top-bar */
+
+        /*//////////////////   top bar   ///////////////////*/
+
         .top-bar-text {
             display: none;
         }
@@ -596,9 +828,12 @@
             width: 20px;
             height: 17px;
         }
-        /* top bar end */
 
-        /* home  */
+        /*///////////////////    top bar end    ///////////////////*/
+
+
+        /*////////////////////    home   /////////////////////*/
+
         .home-btn1 {
             display:block;
             margin-bottom: 1rem;
@@ -629,10 +864,13 @@
 
         }
 
+        /*////////////////////  home end  /////////////////////*/
 
 
 
-                /* .about */
+
+
+        /*////////////////////  about   /////////////////////*/
 
                 .about {
                     display: flex;
@@ -649,15 +887,12 @@
                     margin-left: 0px !important;
                     position: relative;
                     margin-top: 0 !important;
-
-                    /* height: 30rem; */
-                    padding: 20px 0;
+                    height: 20rem !important;
+                    padding: 0px 0;
                     width: 100% !important;
                 }
-                      /* .about */
- 
                 .about-card p {
-                font-size: large;
+                font-size: medium;
                 }
                 .about-card h5 {
                 font-size: x-large;
@@ -666,22 +901,10 @@
                 height: 2.5rem !important;
                 width: 9rem !important;
                 }
-                }
+
+        /*////////////////////  about end  /////////////////////*/
 
 
-
-@media (max-width:300px) {
-
-
-
-    /* about */
-    .about-card p {
-        font-size: small;
-    }
-    .about {
-        margin-top: 0;
-    }
-    
 }
 
 
@@ -694,13 +917,13 @@
 
 
 
-/* extra responsive */
-@media (max-width:576px) and (max-width:600px) {
-    .about-card {
-        height: fit-content !important;
-    }
-    
-}
+
+
+
+
+
+
+
 
 
 
