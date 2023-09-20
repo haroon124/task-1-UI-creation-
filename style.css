@@ -515,13 +515,14 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 .footer {
     width: 100%;
     height: 100%;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     justify-content:flex-start;
     align-items: flex-start;
 }
 
 .footer div {
+    /* border: 2px solid red; */
     margin-top: 5%;
 }
 
@@ -535,6 +536,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     align-items: flex-start;
     text-align: center;
     width: 30%;
+    margin-left: 5%;
 }
 
 #footer-part-1-h5 {
@@ -681,6 +683,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     justify-content: center;
     align-items: flex-start;
     width: 30%;
+    margin-right: 5%;
 }
 
 #footer-part-4-h5 {
@@ -1558,6 +1561,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     .footer-part-4 {
         width: 100% !important;
     }
+
     #footer-part-4-h5 {
         width: 100% !important;
         text-align: center !important;
