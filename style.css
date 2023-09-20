@@ -425,75 +425,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 /* ////////////// our guard  ////////////////// */
 
-/* .our-guards-container {
-    width: 100%;
-    height: 100vh;
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-
-.our-guards {
-    width: 90%;
-    height: 90%;
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.our-guards-container p {
-    width: 75%;
-    text-align: center;
-}
-
-
-
-
-
-
-.our-guards-img-container {
-    border: 2px solid red;
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-    display: flex !important;
-    justify-content:space-between;
-}
-
-
-.our-guards-img {
-    width: 30% !important;
-    height: 100% !important;
-    position: relative;
-}
-
-#our-guards-h1 {}
-
-
-#our-guards-p {}
-
-
-.our-guards-img img {
-    width: 100%;
-}
-
-.image-caption {
-    text-align: center;
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white; 
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-} */
 
 
 
@@ -502,11 +434,12 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 /* ////////////// footer ////////////////// */
 
-.footer-container {
+.footer-container { 
     width: 100%;
     height: 50vh;
     /* border: 2px solid red; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -648,6 +581,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 .footer-part-3-number img {
     width: 17px;
+    margin-bottom: 1rem !important;
 }
 
 .footer-part-3-number p {
@@ -665,6 +599,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 }
 
 .footer-part-3-email img {
+    margin-bottom: 0.9rem !important;
     width: 20px;
 }
 
@@ -710,7 +645,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     border: none;
     border-radius: 3rem;
     color: white;
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(217, 181, 1);
     height: 2.3rem;
     width: 8rem;
     margin-bottom: -1rem;
@@ -722,6 +657,10 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     border-color: rgb(255, 213, 0);
     color: rgb(255, 213, 0);
     transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
 }
 
 /* ////////////// footer end  ////////////////// */
@@ -1102,7 +1041,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
         /*////////////////////    footer    ////////////////////*/
         .footer-container {
-            height: 60vh !important;
+            height: 70vh !important;
         }
         .footer {
             display: flex;
@@ -1155,6 +1094,10 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
             display: flex;
             justify-content: center !important;
             align-items: center !important;
+        }
+
+        .footer-part-4 {
+            margin-left: 10% !important;
         }
 
 
@@ -1270,7 +1213,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
     /*////////////////////    footer    ////////////////////*/
     .footer-container {
-        height: 65vh !important;
+        height: 85vh !important;
     }
 
     .footer {
@@ -1342,6 +1285,11 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
         display: flex;
         justify-content: center !important;
         align-items: center !important;
+    }
+
+    .footer-part-4 {
+        margin-left: 8%;
+        margin-bottom: 1rem !important;
     }
 
 
@@ -1559,7 +1507,9 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 
     .footer-part-4 {
-        width: 100% !important;
+        width: 100% !important;    
+            margin-left: 5%;
+            margin-bottom: 1rem !important;
     }
 
     #footer-part-4-h5 {
@@ -1681,7 +1631,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
          /*////////////////////    footer    ////////////////////*/
     .footer-container {
-        height: 110vh !important;
+        height: 115vh !important;
     }
 
     .footer {
@@ -1753,6 +1703,11 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
         margin-top: 0.3rem !important;
     }
 
+    .footer-part-4 {
+        margin-left: 6%;
+        margin-bottom: 1rem !important;
+    }
+
 
     #footer-part-4-h5 {
         width: 100% !important;
@@ -1773,6 +1728,10 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     #footer-btn {
         margin-left: auto;  
         margin-right: auto;  
+    }
+
+    #footer-end-p {
+        font-size: x-small !important;
     }
 
     /*//////////////////    footer end    ////////////////////*/
