@@ -63,79 +63,171 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 
-/*/////////////////////    home    //////////////// */
+/*//////////////////   nav-bar   ////////////////////*/
 
-.home-container {
-    position: relative !important;
-    background-image: url(./images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (min-width:992px) {
+    .nav-bg {
+        height: 11vh !important;
+        background-color: transparent !important;
+    }
+
+    .logo-link {
+        color: white !important;
+        font-weight: bolder !important;
+        font-size: 2rem !important;
+        /* border: 2px solid red !important; */
+        padding-top: 0.8rem !important;
+        padding-left: 2rem !important;
+    }
+    
+    .nav-div {
+        /* border: 2px solid red; */
+        justify-content: end;
+        padding-top: 1rem !important;
+        height:4rem  !important;
+        display: flex !important;
+        align-items: flex-end !important;
+    }
+    
+    .nav-btn {
+        margin-right: 1rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 500 !important;
+    }
+
+    .nav-btn-1 {
+        padding-top: 2.6rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 700 !important;
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+        padding-bottom: 0.5rem !important;
+        background-color: black !important;
+    }
+
+    .nav-btn-2 {
+        padding-top: 2.6rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 700 !important;
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .nav-btn-3 {
+        padding-top: 2.6rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 700 !important;
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .nav-btn-4 {
+        padding-top: 2.6rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 700 !important;
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .nav-btn-5 {
+        padding-top: 2.6rem !important;
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-weight: 700 !important;
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .nav-btn:hover {
+        background-color: black !important;
+    }
+    
 }
 
-.black-layer-home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.564);
+
+@media (max-width:991px) {
+
+    .nav-bg {
+        background-color: transparent !important;
+    }
+
+    .logo-link {
+        color: white !important;
+        font-weight: bold !important;
+        font-size: 1.7rem !important;
+        /* border: 2px solid red !important; */
+        padding-top: 0.8rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .nav-btn-1 {
+        text-align: center !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .nav-btn-2 {
+        text-align: center !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white !important;
+        margin-bottom: 0.5rem !important;
+
+    }
+
+    .nav-btn-3 {
+        text-align: center !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white !important;
+        margin-bottom: 0.5rem !important;
+
+    }
+
+    .nav-btn-4 {
+        text-align: center !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white !important;
+        margin-bottom: 0.5rem !important;
+
+    }
+
+    .nav-btn-5 {
+        text-align: center !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: white !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .navbar-toggler {
+        /* color: white !important; */
+        background-color: rgb(243, 190, 1) !important;
+        color: transparent;
+        
+    }
+
+    .navbar-toggler:hover {
+        color: transparent !important;
+        background-color: transparent !important;
+    }
+
+
 }
 
-.home {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start !important;
-}
-
-.home-inner {
-    /* border: 2px solid red; */
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    position: absolute;
-    padding-top: 1rem;
-    padding-left: 2rem;
-}
-
-.home-btn1 {
-    background-color: white;
-    border-color: white;
-    color: black;
-    width: 9rem;
-    border-radius: 0;
-    margin-right: 1%;
-}
-
-.home-btn1:hover {
-    border-color: white !important;
-    background-color: transparent !important;
-    color: white !important;
-
-
-}
-
-.home-btn2 {
-    color: black;
-    width: 9rem;
-    border-radius: 0;
-    color: white;
-}
-
-.home-btn2:hover {
-    color: black !important;
-    border-radius: 0 !important;
-    background-color: transparent !important;
-    border-color: rgb(255, 213, 0) !important;
-    color: rgb(255, 221, 53)  !important;
-}
-
-/*/////////////////////    home end    //////////////// */
-
+/*///////////////    nav-bar    ///////////////*/
 
 
 /* ///////////////////      about    ////////////////// */
@@ -185,244 +277,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 }
 
 /* /////////////////  about end  ///////////// */
-
-
-
-/* ////////////////  our services  ////////////////// */
-
-.our-services-container {
-    background-color: rgb(34, 34, 34);
-    border: 2px solid rgb(34, 34, 34) ;
-}
-
-#our-services-h1 {
-    /* border: 2px solid red; */
-    color: white;
-    font-weight: bold;
-    font-size: xx-large !important;
-    text-align: center;
-    margin-top: 3%;
-}
-
-.our-services {
-    /* border: 2px solid red; */
-    padding-top: 30px;
-    padding-bottom: 90px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.services-card-img {
-    /* border:  2px solid red; */
-    width: 80px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 10px;
-
-
-}
-
-.services-card-title {
-    text-align: center;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.services-card-p {
-    text-align: center;
-}
-
-.services-card-btn {
-    width: 9rem !important;
-    height:  2.5rem !important;
-}
-
-.my-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-/* /////////////////// our services end  ////////////////// */
-
-
-
-/* ///////////////////   reviews   ////////////////// */
-
-.reviews-container {
-    /* border: 2px solid red   ; */
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5% !important;
-
-}
-
-.reviews {
-    /* border: 2px solid red; */
-    width: 90%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#reviews-heading {
-    /* border: 2px solid red; */
-    text-align: center;
-    color: black;
-    font-size: xx-large !important;
-    font-weight: bolder !important;
-    margin-bottom: 12% !important;
-}
-
-.reviews-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#reviews-img {
-    width: 9rem;
-    margin-bottom: 1%;
-}
-
-#reviews-client-name {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    margin-bottom: 2%;
-}
-
-#reviews-p {
-    text-align: center;
-    /* border: 2px solid red; */
-    width: 75%;
-}
-
-.reviews-btn-container {
-    /* border: 2px solid red !important; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-}
-
-.reviews-btn-container button {
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.reviews-btn {
-    width: fit-content !important;
-    padding: 8px 20px 8px 20px!important;
-    border-radius: 50%;
-    background-color: black;
-    border: none;
-    color: white !important;
-    font-weight: bolder !important;
-    font-size: larger;
-} 
-
-.reviews-btn:hover {
-    background-color:  rgb(255, 213, 0);
-}
-
-/* ////////////// reviews end  ////////////////// */
-
-
-
-/* ////////////// contat-me ////////////////// */
-
-.contact-me-container {
-    background-image: url(./images/contact-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* border: 2px solid red; */
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.black-layer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.contact-me {
-    /* border: 2px solid red; */
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-#contact-me-heading {
-    /* border: 2px solid red; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    color: white;
-    font-size: 3rem !important;
-    margin-bottom: 8%;
-}
-
-.contact-me-input {
-    width: 100%;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-me-input input,textarea{
-    width: 50%;
-    height: 2.8rem;
-    margin-bottom: 1rem;
-    border: none !important;
-}
-
-#contact-me-message {
-    width: 50%;
-    height: 8rem;
-}
-
-.contact-me-input input::placeholder {
-    font-weight: bolder;
-    color: black;
-}
-
-.contact-me-input textarea::placeholder {
-    font-weight: bolder;
-    color: black;
-}
-
-.contact-me-btn {
-    width: 10.5rem !important;
-    height: 2.8rem !important;
-
-}
-
-/* ////////////// contat-me end  ////////////////// */
-
-
 
 /* //////////////    footer     ////////////////// */
 
@@ -648,6 +502,16 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*/////////////////////    responsive     /////////////////////*/
 
 
@@ -683,18 +547,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*///////////////////  top bar end   //////////////////*/
 
 
-    /*///////////////////     home      //////////////////*/
 
-    .home-btn1 {
-        height: 2.5rem;
-        width: 10rem;
-    }
-    .home-btn2 {
-        height: 2.5rem;
-        width: 10rem;
-    }
-
-    /*///////////////////   home end   //////////////////*/
 
 
     /*///////////////////  about  //////////////////*/
@@ -712,16 +565,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*///////////////////   about end   //////////////////*/
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -756,24 +599,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*//////////////////   top bar end    ////////////////////*/
 
 
-    /*//////////////////   home   ////////////////////*/
-
-    .home-content h1 {
-        font-size: 3.2rem !important;
-    }
-    .home-btn1 {
-        width: 30%;
-        height: 3rem!important;
-
-    }
-    .home-btn2 {
-        width: 30%;
-        height: 3rem!important;
-
-    }
-
-    /*//////////////////    home end    ////////////////////*/
-
+ 
 
 
     /*//////////////////    about    ////////////////////*/
@@ -795,17 +621,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 
-    /*//////////////////    our services    ////////////////////*/
-    .services-card {
-        width:20rem  !important;
-        height:20rem !important;
-    }
-    .services-card-btn {
-        width: 10rem !important;
-        height: 2.5rem !important;
-    }
 
-    /*//////////////////    our services end    ////////////////////*/
     
 }
 
@@ -855,39 +671,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     }
 
     /*///////////////  about end  /////////////////*/
-
-
-
-    /*//////////////////    our services    ////////////////////*/
-
-    .our-services-container {
-        margin-top: 22%;
-        height: 30rem !important;
-    }
-    .services-card {
-        width:18rem  !important;
-        height:21rem !important;
-    }
-    .services-card-btn {
-        width: 9rem !important;
-        height: 2.5rem !important;
-    }
-
-    /*//////////////////    our services end    ////////////////////*/
-
-
-
-    /*//////////////////    contact-me   ////////////////////*/
-
-        .contact-me-input input {
-            width: 100% !important;
-        }
-        .contact-me-input textarea {
-            width: 100% !important;
-        }
-        
-    /*//////////////////    contact-me end    ////////////////////*/
-
 
 }
 
@@ -940,35 +723,7 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /* ///////////////////   about end    ///////////////*/
 
 
-    /*//////////////////    our services    ////////////////////*/
-    .our-services-container {
-        margin-top: 22%;
-        height: 33rem !important;
-    }
-    .services-card {
-        width:15rem  !important;
-        height:23rem !important;
-    }
-    .services-card-btn {
-        width: 9rem !important;
-        height: 2.5rem !important;
-    }
-
-    /*//////////////////    our services end    ////////////////////*/
-
-
-    /*//////////////////    contact-me   ////////////////////*/
-
-    .contact-me-input input {
-        width: 100% !important;
-    }
-
-    .contact-me-input textarea {
-        width: 100% !important;
-    }
-            
-    /*//////////////////    contact-me end    ////////////////////*/
-
+   
 
     /*////////////////////    footer    ////////////////////*/
     .footer-container {
@@ -1079,16 +834,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 
-    /*////////////////   home   //////////////////// */
-
-    .home-inner {
-            padding-left: 0 !important;
-    }
-
-    /*////////////////   home end   //////////////////// */
-
-
-
     /*//////////////////   about   //////////////////*/
 
     .about {
@@ -1126,49 +871,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     }
 
     /*//////////////////   about end   //////////////////*/
-
-
-
-    /*//////////////////    our services    ////////////////////*/
-
-    .our-services-container {
-        margin-top: 35%;
-        height: 70rem !important;
-    }
-    .our-services {
-        /* border: 2px solid red; */
-        padding: 0px;
-        height: 90%;
-        display: inline-block !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: space-between !important;
-    }
-
-    .services-card {
-        width:25rem  !important;
-        height:19rem !important;
-    }
-
-    .services-card-btn {
-        width: 9rem !important;
-        height: 2.5rem !important;
-    }
-    
-    /*//////////////////    our services end    ////////////////////*/
-
-
-
-    /*//////////////////    contact-me   ////////////////////*/
-
-    .contact-me-input input {
-        width: 100% !important;
-    }
-    .contact-me-input textarea {
-        width: 100% !important;
-    }
-        
-    /*//////////////////    contact-me end    ////////////////////*/
 
 
 
@@ -1323,15 +1025,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*//////////////////   top-bar end    ///////////////////*/
 
 
-    /*////////////////   home   //////////////////// */
-
-    .home-inner {
-        padding-left: 0 !important;
-                }
-
-    /*////////////////   home end   //////////////////// */
-
-
     /*//////////////////   about    ///////////////////*/
 
     .about {
@@ -1368,49 +1061,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     }
 
     /*//////////////////   about end    ///////////////////*/
-
-
-    /*//////////////////    our services    ////////////////////*/
-    
-    .our-services-container {
-        margin-top: 35%;
-        height: 70rem !important;
-    }
-
-    .our-services {
-        /* border: 2px solid red; */
-        padding: 0px;
-        height: 90%;
-        display: inline-block !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: space-between !important;
-    }
-
-    .services-card {
-        width:25rem  !important;
-        height:19rem !important;
-    }
-
-    .services-card-btn {
-        width: 9rem !important;
-         height: 2.5rem !important;
-    }
-    
-    /*//////////////////    our services end    ////////////////////*/
-
-
-    /*//////////////////    contact-me   ////////////////////*/
-
-    .contact-me-input input {
-        width: 100% !important;
-    }
-
-    .contact-me-input textarea {
-        width: 100% !important;
-    }
-            
-    /*//////////////////    contact-me end    ////////////////////*/
 
 
     /*////////////////////    footer    ////////////////////*/
@@ -1526,15 +1176,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
 @media (max-width:425px) {
 
-    /*////////////////   home   //////////////////// */
-
-    .home-inner {
-        padding-left: 0 !important;
-    }
-
-    /*////////////////   home end   //////////////////// */
-
-
     /*////////////////////    about    ///////////////////////*/
 
     .about-container {
@@ -1555,77 +1196,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
 
     /*////////////////////    about end    ///////////////////////*/
 
-
-
-    /*////////////////////    our services    ///////////////////////*/
-
-    .our-services-container {
-        margin-top: 35%;
-        height: 75rem !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .our-services-h1 {
-        margin-bottom: -50px !important;
-    }
-
-    .our-services {
-        /* border: 2px solid red; */
-        padding: 0px;
-        height: 90%;
-        display: inline-block !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: space-between !important;
-    }
-
-    .services-card {
-        width:16rem  !important;
-        height:22rem !important;
-    }
-
-    .services-card-btn {
-        width: 9rem !important;
-        height: 2.5rem !important;
-    }
-    
-    /*//////////////////    our services end    ////////////////////*/
-
-    
-    /*//////////////////    reviews    ////////////////////*/
-
-    #reviews-heading {
-        font-size: x-large !important ;
-        margin-bottom: 6% !important;
-    }
-
-    .reviews-container {
-        margin-top: 15% !important;
-    }
-      
-    /*//////////////////    reviews end   ////////////////////*/
-
-
-    /*//////////////////    contact-me   ////////////////////*/
-    .contact-me-container {
-        margin-top: 7% !important;
-    }
-
-    .contact-me-input input {
-        width: 100% !important;
-    }
-
-    .contact-me-input textarea {
-        width: 100% !important;
-    }
-
-    #contact-me-heading  {
-        font-size: xx-large !important;
-    }
-            
-    /*//////////////////    contact-me end    ////////////////////*/
 
 
      /*////////////////////    footer    ////////////////////*/
@@ -1785,41 +1355,6 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*///////////////////    top bar end    ///////////////////*/
 
 
-    /*////////////////////    home   /////////////////////*/
-
-    .home-btn1 {
-        display:block;
-        margin-bottom: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .home-btn2 {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .home-content h1 {
-        font-size: xx-large !important;
-    }
-
-    .home-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home-content p {
-        text-align: center;
-    }
-
-    .home-content h1 {
-        text-align: center ;
-    }
-
-    /*////////////////////  home end  /////////////////////*/
-
 
     /*////////////////////  about   /////////////////////*/
 
@@ -1859,172 +1394,4 @@ p , h1 , h2 , h3 , h4 , h5 , h6 {
     /*////////////////////  about end  /////////////////////*/
 
 
-} 
-
-
-
-/*//////////////////   nav-bar   ////////////////////*/
-
-@media (min-width:992px) {
-    .nav-bg {
-        height: 11vh !important;
-        background-color: transparent !important;
-    }
-
-    .logo-link {
-        color: white !important;
-        font-weight: bolder !important;
-        font-size: 2rem !important;
-        /* border: 2px solid red !important; */
-        padding-top: 0.8rem !important;
-        padding-left: 2rem !important;
-    }
-    
-    .nav-div {
-        /* border: 2px solid red; */
-        justify-content: end;
-        padding-top: 1rem !important;
-        height:4rem  !important;
-        display: flex !important;
-        align-items: flex-end !important;
-    }
-    
-    .nav-btn {
-        margin-right: 1rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 500 !important;
-    }
-
-    .nav-btn-1 {
-        padding-top: 2.6rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 700 !important;
-        padding-left: 1.3rem !important;
-        padding-right: 1.3rem !important;
-        padding-bottom: 0.5rem !important;
-        background-color: black !important;
-    }
-
-    .nav-btn-2 {
-        padding-top: 2.6rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 700 !important;
-        padding-left: 1.3rem !important;
-        padding-right: 1.3rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-
-    .nav-btn-3 {
-        padding-top: 2.6rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 700 !important;
-        padding-left: 1.3rem !important;
-        padding-right: 1.3rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-
-    .nav-btn-4 {
-        padding-top: 2.6rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 700 !important;
-        padding-left: 1.3rem !important;
-        padding-right: 1.3rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-
-    .nav-btn-5 {
-        padding-top: 2.6rem !important;
-        color: white !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        font-weight: 700 !important;
-        padding-left: 1.3rem !important;
-        padding-right: 1.3rem !important;
-        padding-bottom: 0.5rem !important;
-    }
-
-    .nav-btn:hover {
-        background-color: black !important;
-    }
-    
 }
-
-
-@media (max-width:991px) {
-
-    .nav-bg {
-        background-color: transparent !important;
-    }
-
-    .logo-link {
-        color: white !important;
-        font-weight: bold !important;
-        font-size: 1.7rem !important;
-        /* border: 2px solid red !important; */
-        padding-top: 0.8rem !important;
-        padding-left: 1rem !important;
-    }
-
-    .nav-btn-1 {
-        text-align: center !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white !important;
-        margin-bottom: 0.5rem !important;
-    }
-
-    .nav-btn-2 {
-        text-align: center !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white !important;
-        margin-bottom: 0.5rem !important;
-
-    }
-
-    .nav-btn-3 {
-        text-align: center !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white !important;
-        margin-bottom: 0.5rem !important;
-
-    }
-
-    .nav-btn-4 {
-        text-align: center !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white !important;
-        margin-bottom: 0.5rem !important;
-
-    }
-
-    .nav-btn-5 {
-        text-align: center !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-        color: white !important;
-        margin-bottom: 0.5rem !important;
-    }
-
-    .navbar-toggler {
-        /* color: white !important; */
-        background-color: rgb(243, 190, 1) !important;
-        color: transparent;
-        
-    }
-
-    .navbar-toggler:hover {
-        color: transparent !important;
-        background-color: transparent !important;
-    }
-
-
-}
-
-/*///////////////    nav-bar    ///////////////*/
